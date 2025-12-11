@@ -18,9 +18,9 @@ create table bronze.crm_cust_info(
 	cst_key				varchar(50),
 	cst_firstname		varchar(50),
 	cst_lastname		varchar(50),
-	cst_marital_status  char(1),
-	cst_gndr		    char(1),
-	cst_creat_date		date
+	cst_marital_status  varchar(50),
+	cst_gndr		    varchar(50),
+	cst_create_date		date
 );
 
 if object_id ('bronze.crm_prd_info', 'u') is not null
@@ -68,6 +68,7 @@ if object_id ('bronze.erp_px_cat_g1v2', 'u') is not null
 	drop table bronze.erp_px_cat_g1v2;
 create table bronze.erp_px_cat_g1v2(
 	id			varchar(50),
+	cat			varchar(50),
 	subcat		varchar(50),
 	maintenance varchar(50)
 );
